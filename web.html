@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="CSS/CSS-BẢNG.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<h2>VN-GO</h2>
+<p>TRANG ADMIN CỦA VN-GO</p>
+<a href="trangchu.html"> <button type="button" >Trở về trang chủ</button></a>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">ADMIN</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">BẢNG NHẬP SỐ LIỆU</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">BẢNG THỐNG KÊ</button>
+  <button class="tablinks" onclick="openCity(event, 'bang')">BẢNG TOUR ĐƯỢC NHẬP VÀO HỆ THỐNG</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h2>THÔNG TIN TÀI KHOẢN</h2>
+ <div id="tt">
+     
+ </div>
+  <P id="d1"></P>
+  <p id="d3"></p>
+  <p id="d4"></p>
+  <p id="d5"></p>
+  <p id="d6"></p>
+  
+  
+
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <body onload ="Showdatasaved()">
+    <div class="main">
+       
+        <form>
+            <ul>
+                <li>
+                    <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">TÊN TOUR</div>
+                    <input type="text" style="width: 706px;height: 22px;background-color:#f7f69e;border: 1px solid grey;" id="name">
+                </li>
+                <li>
+                  <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">LOẠI TUOUR</div>
+                  <select type="text" onchange="changeManufacturer()" style="width: 712px;height: 29px;border: 1px solid grey;" id="select1">
+                      <option>--Select--</option>
+                      <option value="TRONG NƯỚC">TRONG NƯỚC</option>
+                      <option value="NGOÀI NƯỚC">NGOÀI NƯỚC</option>
+                      
+                  </select>
+              </li>
+                <li>
+                  <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">ĐỊA ĐIỂM</div>
+                  <select type="text" style="width: 712px;height: 29px;border: 1px solid grey;" id="nsx" disabled>
+                  </select>
+              </li>
+                <li>
+                    <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">GIÁ </div>
+                    <input type="text" style="width: 706px;height: 22px;border: 1px solid grey;" id="fm_price" onkeyup="tinhtoan()">
+                </li>
+                <li>
+                    <div style="font-weight: bold; font-family: Arial, Helvetica, sans-serif;">SỐ VÉ CÒN LẠI</div>
+                    <input type="text" style="width: 706px;height: 22px;border: 1px solid grey;" id="fm_quantity" onkeyup="tinhtoan()">
+                </li>
+               
+               
+                <div style="display: flex;">
+                    <div id="btn_register" onclick="addproduct()" style="border: 1px solid rgb(91, 202, 118);border-radius: 3px;color: white;padding: 5px;background-color: rgb(91, 202, 118);margin-right: 8px;cursor: pointer;">THÊM VÀO BẢNG</div>
+                    <div onclick="resetall()" style="border: 1px solid rgb(235, 174, 84);border-radius: 3px;color: white;padding: 5px;background-color: rgb(235, 174, 84);cursor: pointer;">KHỞI ĐỘNG LẠI</div>
+                
+                </div>
+            </ul>
+        </form>
+    </div>
+    <br><br><br>
+   
+</body>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+    <h1>BẢNG THỐNG KỆ CỦA VN-GO</h1>
+    <canvas id="frame_canvas" width=500 height=300>
+       
+    </canvas>
+   
+</div>
+<div id="bang" class="tabcontent">
+  <div class="table-all">
+    <table class="table table-bordered" id="search-table">
+        <div class="mb-3">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên cần tìm...">
+       
+   
+    
+   
+        <caption style="background-color: #4970a3;color: white;height: 30px;padding-top: 8px;">BẢNG THỐNG KÊ TOUR CỦA VN-GO</caption>
+        <thead>
+            <tr id="headtable">
+                <th>SỐ THỨ TỰ</th>
+                <th>TÊN TOUR</th>
+                <th>ĐỊA ĐIỂM</th>
+                <th>GIÁ</th>
+                <th>SỐ VÉ CÒN LẠI</th>
+                <th>LOẠI TOUR</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="bodytable">
+        </tbody>
+    </table>
+    </div>
+</div>
+<script src="js/trangchu.js"></script>
+   <script src="js/JS-BANG.js"></script>
+ 
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/canvasjs.react.js"></script>
+</body>
+</html> 
