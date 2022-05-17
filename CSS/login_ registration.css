@@ -1,0 +1,206 @@
+#wap_login{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+ 
+}
+
+#login{
+
+   width: 25%;
+   background: #ffffffeb;
+   box-shadow: 0px 3px 3px 2px #beb8b8;
+   float: left;
+   margin-left:600px;
+   text-align: center;
+
+   
+}
+h2{
+    color: white;
+    background: rgba(34, 228, 50, 0.76);
+   
+    width: 50%;
+    box-shadow: 2px 2px 1px 1px grey;
+   
+    margin-left: 100px;
+}
+.login input{
+   
+padding: 10px;
+width: 80%
+}
+.login label{
+   font-size: 18px;
+ 
+}
+.login select{
+    padding: 10px;
+    width: 86%;
+    margin-top: 10px;
+}
+#login #btn-login{
+    color: rgb(54, 12, 12);
+    border: 1px solid rgb(54, 12, 12);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#login #btn-login:hover {
+    color: white;
+    border: 1px solid rgb(54, 12, 12);
+    background: rgb(54, 12, 12);
+    border-radius: 5px;
+}
+#login #btn-huy_dn{
+    color: rgb(54, 12, 12);
+    border: 1px solid rgb(54, 12, 12);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#login #btn-huy_dn:hover {
+    color: white;
+    border: 1px solid rgb(54, 12, 12);
+    background: rgb(54, 12, 12);
+    border-radius: 5px;
+}
+#login #btn-dangkymoi1{
+    color: black;
+    border: 1px solid  rgba(34, 228, 50, 0.767);
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#login #btn-dangkymoi1:hover {
+    color: white;
+    border: 1px solid  rgba(34, 228, 50, 0.767);
+    background:  rgba(34, 228, 50, 0.767);
+    border-radius: 5px;
+}
+/* #remember{
+    background: red;
+} */
+.close_login {
+    color: #fa0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-right: 5px;
+  }
+  
+  .close_login:hover,
+  .close_login:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  span{
+      color: red;
+      font-weight: bold;
+  }
+  /* đăng ký */
+
+  #wap_registration{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+  }
+
+#registration{
+
+   width: 25%;
+   background:#ffffffeb;
+   box-shadow: 0px 3px 3px 2px #beb8b8;
+   float: left;
+   margin-left:600px;
+   text-align: center;
+
+   
+}
+
+#registration #btn-registration{
+    color: rgb(54, 12, 12);
+    border: 1px solid rgb(54, 12, 12);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#registration #btn-registration:hover {
+    color: white;
+    border: 1px solid rgb(54, 12, 12);
+    background: rgb(54, 12, 12);
+    border-radius: 5px;
+}
+#registration #btn-huy_dk{
+    color: rgb(54, 12, 12);
+    border: 1px solid rgb(54, 12, 12);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#registration #btn-huy_dk:hover {
+    color: white;
+    border: 1px solid rgb(54, 12, 12);
+    background: rgb(54, 12, 12);
+    border-radius: 5px;
+}
+#registration #btn-dangnhaplai{
+    color: rgb(43, 42, 41);
+    border: 1px solid rgba(34, 228, 50, 0.767);
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+    background: white;
+}
+#registration #btn-dangnhaplai:hover {
+    color: white;
+    border: 1px solid rgba(34, 228, 50, 0.767);
+    background: rgba(18, 255, 97, 0.63);
+    border-radius: 5px;
+}
+
+.close_registration {
+    color: #fa0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -70px;
+    margin-right: 5px;
+  }
+  
+  .close_registration:hover,
+  .close_registration:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #check,#check1,#check2 ,
+   #check3,#check4,#check5,#check6,#check7,#check_email_lh,#check_ten_lh,#check_noidung_lh{
+      color: rgb(41, 4, 255);
+      font-weight: bold;
+  }
